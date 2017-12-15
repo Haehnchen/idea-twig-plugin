@@ -1,0 +1,42 @@
+<idea-plugin>
+    <id>de.espend.twig</id>
+    <name>Twig Extended</name>
+    <version>0.1</version>
+    <vendor email="daniel@espendiller.net" url="http://espend.de">Daniel Espendiller</vendor>
+
+    <description>
+     <![CDATA[
+        <h1>Twig Extended</h1>
+        <p>PhpStorm / IntelliJ Twig Plugin improvements extracted from Symfony Plugin and provided some awesome stuff based on the main JetBrains core Twig</p>
+    ]]>
+    </description>
+
+    <change-notes>
+    <![CDATA[
+
+    <ul>
+        <li>Symfony Plugin split</li>
+    </ul>
+
+    <br/>
+
+    <a href="https://github.com/Haehnchen/idea-twig-plugin/blob/master/CHANGELOG.md">see full changelog</a> | <a href="https://www.paypal.me/DanielEspendiller">Donate</a>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="172.3317"/>
+
+    <depends>com.jetbrains.twig</depends>
+    <depends>com.jetbrains.php</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectService serviceImplementation="de.espend.twig.TwigSettings"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+</idea-plugin>
