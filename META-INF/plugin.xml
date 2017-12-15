@@ -35,6 +35,10 @@
         <projectService serviceImplementation="de.espend.twig.TwigSettings"/>
     </extensions>
 
+    <extensionPoints>
+        <extensionPoint name="extension.TwigNamespaceExtension" interface="de.espend.twig.extension.TwigNamespaceExtension"/>
+    </extensionPoints>
+
     <actions>
         <!-- Add your actions here -->
     </actions>
